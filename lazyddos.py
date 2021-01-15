@@ -14,25 +14,13 @@ def hack():
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
     logo = """
-
-    #
-    # #   #####    ##
-    #   #  #    #  #  #
-    #     # #    # #    #
-    ####### #####  ######
-    #     # #   #  #    #
-    #     # #    # #    #  Software ...
+              PUNJABI
     =============================
-    = Insta:- ara_software      =
+    = Insta:- i.punjabii        =
     =============================
-    = Snap:-  ara_software      =
+    = Snap:-  i.punjabi         =
     =============================
-    = YT:-    Ara Software      =
-    =============================
-    = Tweet:- AraSoftwaree      =
-    =============================
-    = Tele:-  AraSoftwaree      =
-    =============================
+   
 
     """
     print (logo)
@@ -58,7 +46,7 @@ def hack():
             
         except socket.error as msg:
             print("|[Connection Failed]         |")
-        print ( "|[DDOS ROSHT !!!!! ]       |")
+        print ( "|[DDOS ROSHT !!!!! ]       | la regay porte " + port)
         ddos.close()
     for i in range(1, intconn):
         dos()
