@@ -50,6 +50,7 @@ def hack():
         ddos.close()
     for i in range(1, intconn):
         dos()
+        
     print ("+----------------------------+")
     print("= AW ZHMARA DDOSAY DAWAT KRDBU TAWAW BU ")
     print (logo)
